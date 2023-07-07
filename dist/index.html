@@ -3,10 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="dist/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Weather App</title>
     </head>
     <body>
-        
+        <main class="container">
+            <header>
+                <h1>What Is Today's Weather</h1>
+            </header>
+            <nav>
+                <form action="">
+                    <input type="text" id="weatherInput" placeholder="Enter City">
+                    <input type="submit" value="Get Weather">
+                </form>
+            </nav>
+            <div class="weatherData"></div>
+        </main>
+        <footer>
+            <p>Made By The Monist</p>
+        </footer>
+        <script src="main.js"></script>
     </body>
 </html>
