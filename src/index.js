@@ -1,4 +1,6 @@
 import './styles.scss';
+import './apiFunctions.js';
+import './domFunctions.js'
 
 //Handles Forms
 const searchBtn = document.querySelector("#searchBtn");
