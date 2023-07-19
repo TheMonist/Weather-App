@@ -1,9 +1,9 @@
 const weather = (() => {
     const apiKey = 'fa970c595d3e4d1fb45205849232906';
 
-    async function getLocation(city) {
+    async function getLocation(searchInput) {
         try {
-            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`, {mode:'cors'});
+            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${searchInput}&aqi=yes`, {mode:'cors'});
             const getData = await response.json();
             return getData; 
         }

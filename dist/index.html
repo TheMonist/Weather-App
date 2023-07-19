@@ -14,12 +14,19 @@
             <nav>
                 <form action="" id="searchForm">
                     <input type="text" id="searchInput" placeholder="Enter City">
-                    <button type="submit" id="searchButton">Search</button>
+                    <button type="submit" id="searchBtn">Search</button>
                 </form>
             </nav>
-            <div class="weatherData"></div>
+            <div class="weatherData">
+                <h2 class="cityName"></h2>
+                <p>The Current Temperature Is: </p>
+                <p class="temp"></p>
+                <p class="feelsLike"></p>
+                <p class="conditions"></p>
+            </div>
         </main>
         <footer>
+            <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
             <p>Made By The Monist</p>
         </footer>
         <script src="main.js"></script>
