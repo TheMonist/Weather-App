@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$roboto: 'Roboto', serif;
+
+$blue: #79E0EE;
+$green1: #98EECC;
+$green2: #D0F5BE;
+$yellow: #FBFFDC;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $roboto;
 }
 
 body {
@@ -9,4 +19,70 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+.container {
+  background-color: $blue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header, .nav {
+  background-color: $green1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#searchBtn {
+  background-color: $blue;
+  padding: 3px;
+  border: 1px solid $yellow;
+  border-radius: 2px;
+  font-family: $roboto, serif;
+}
+
+.weatherBody {
+  background-color: $blue;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.weatherData {
+  margin-top: 1em;
+  background-color: $yellow;
+  border: 1px solid $yellow;
+  border-radius: 10px;
+  height: 25vh;
+  width: 25vw;
+  padding: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.footer {
+  background-color: $green2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none; 
 }

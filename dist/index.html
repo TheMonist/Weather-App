@@ -7,27 +7,30 @@
         <title>Weather App</title>
     </head>
     <body>
-        <header>
-            <h1>What Is Today's Weather?</h1>
-        </header>
         <main class="container">
-            <nav>
-                <form action="" id="searchForm">
-                    <input type="text" id="searchInput" placeholder="Enter City">
-                    <button type="submit" id="searchBtn">Search</button>
-                </form>
+            <header class="header">
+                <h1>What Is Today's Weather?</h1>
+            </header>
+            <nav class="nav">
+                <input type="text" id="searchInput" placeholder="Enter City">
+                <button type="submit" id="searchBtn">Search</button>
             </nav>
-            <div class="weatherData">
-                <h2 class="cityName"></h2>
-                <p class="temp"></p>
-                <p class="feelsLike"></p>
-                <p class="conditions"></p>
+            <div class="weatherBody">
+                <div class="weatherData">
+                    <h3 class="cityName"></h3>
+                    <h2 class="temp"></h2>
+                    <p class="range"></p>
+                    <p class="feelsLike"></p>
+                    <p class="conditions"></p>
+                    <p class="humidity"></p>
+                </div>
             </div>
-        </main>
-        <footer>
+            <footer class="footer">
+            <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a>
             <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
             <p>Made By The Monist</p>
         </footer>
+        </main>
         <script src="main.js"></script>
     </body>
 </html>
